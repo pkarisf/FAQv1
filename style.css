@@ -2,36 +2,19 @@ body {font-family: helvetica}
 .container {width: 320px; margin: 0 auto; overflow: hidden}
 a{text-decoration: none}
 
-#faq-links {padding: 10px 20px}
-
-#faq-links div {
-    color: #aeaeaf;
-    cursor: pointer;
-    font-weight: 700;
-    text-transform: capitalize;
-    margin: 18px 0
-}
 
 .faq-group {
     padding: 0 20px 40px 20px;
     position: relative
 }
 
+/*Titulo */
 .faq-group div {
     font-weight: 700;
     text-align: center;
 }
 
-.faq-group hr {
-        border: 0;
-    border-top: 1px solid #606060;
-    clear: both;
-    -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    height: 0;
-}
-
+/*Icono de triangulo*/
 .faq-group:after {
     top: 33%;
 	 left: 50%;
@@ -46,26 +29,20 @@ a{text-decoration: none}
   margin-left: -15px
 }
 
+/*Separacion de las preguntas*/
 .faq-accordion>li  {
     border-top: 1px solid rgba(198, 198, 198, 0.4);
     color: #666;
     padding: 1.125em 0
 }
 
+/*Apariencia de las preguntas*/
 .faq-accordion li a {
     color: #666;
     padding: 1.125em;
 }
 
-.faq-accordion > li:last-child {
-    border-bottom: 1px solid rgba(198, 198, 198, 0.4);
-}
-
-.faq-accordion > li > a:before {
-    content: 'Q.';
-    padding-right: 0.313em
-}
-
+/*Simbolos preguntas*/
 .faq-accordion > li > a:after {
     color: #006eff;
     content: '+';
@@ -78,12 +55,13 @@ a{text-decoration: none}
     overflow-y: hidden;
 }
 
+
 .faq-accordion > li > a.expanded:after {
     color:  #26a8ff;
     content: '\2212';
     -webkit-transform: scale(2);
     -ms-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
 }
 
 .faq-accordion > li > a.expanded {font-weight: 700; opacity: 1 !important}
@@ -93,6 +71,7 @@ a{text-decoration: none}
     margin: 20px 0 -20px;
 }
 
+
 .faq-content p:before {
     content: 'A.';
     color: #006eff;
@@ -101,6 +80,7 @@ a{text-decoration: none}
   margin-right: .5em
 }
 
+/*Contenedor de las respuestas*/
 .faq-content p {
     margin: 0 1.2em;
     padding: 1.250em 0
@@ -109,8 +89,10 @@ a{text-decoration: none}
 
 .faq-hide {display: none}
 
+
+
 .faq-selected {
     color: #49494b!important;
- -webkit-transition: all 1s ease;
-         transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+ 	transition: all 1s ease;
 }
