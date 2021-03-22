@@ -2,44 +2,6 @@
 var accordWithPage =  function() {
   
     var faqDiv = $('#faq-links div');
-     
-   
-   $(function () {
-     
-   faqDiv.on("click", function() {
-       
-     var hideSec = 'faq-hide';  
-         var $this = $(this),
-         $id = $this.attr('id'),
-         $class = '.' + $('.about-' + $id).attr('class').replace(hideSec, '');
-   
-     $('#faq-wrapper').addClass(hideSec);
-     $('.about-' + $id).removeClass(hideSec);
-     $('div[class*=about]').not($class).addClass(hideSec);
-        
-    });
-   
-   });
-   
-   $(function () {
-     
-           var select = 'faq-selected';      
-     
-           faqDiv.click(function () {
-   
-           if ($(this).hasClass(select)) {
-               $(this).removeClass(select);
-           } else {
-               $('#faq-links .faq-selected').removeClass(select);
-               $(this).addClass(select);             
-           }
-       }); //faq link selected
-   });
-   
-     
-     
-   //Accordion
-     
    $(function () {
      
      var expand = 'expanded';
